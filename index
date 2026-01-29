@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Honest Immigration – CRM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Supabase CDN -->
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <header class="header">
+    <h1>Honest Immigration</h1>
+    <button id="newClientBtn">+ New Client</button>
+  </header>
+
+  <main class="container">
+
+    <!-- Dashboard Stats -->
+    <section class="stats">
+      <div class="card">Total Clients: <span id="totalClients">0</span></div>
+      <div class="card">Active Cases: <span id="activeCases">0</span></div>
+      <div class="card">Monthly Goal: 85%</div>
+      <div class="card">Avg Process Time: 42 days</div>
+    </section>
+
+    <!-- Client List -->
+    <section class="clients">
+      <h2>Client Process Tracking</h2>
+      <div id="clientList"></div>
+    </section>
+
+  </main>
+
+  <!-- App Logic -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
